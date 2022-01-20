@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Regular.otf">
+            <string>NotoSansCJKkr-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonInputView" customModule="FollinicIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="mLInfor" destination="3v9-pO-U6x" id="2wh-zo-MC3"/>
+                <outlet property="mTVInput" destination="Fqq-Sn-Rmj" id="9eN-ad-KKj"/>
+                <outlet property="mViewInputBg" destination="dOp-Pu-huN" id="kzu-rq-HLs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOp-Pu-huN">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fqq-Sn-Rmj">
+                            <rect key="frame" x="16" y="0.0" width="342" height="50"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Fqq-Sn-Rmj" secondAttribute="bottom" id="0mI-hv-Scd"/>
+                        <constraint firstAttribute="trailing" secondItem="Fqq-Sn-Rmj" secondAttribute="trailing" constant="16" id="JyA-u2-5tb"/>
+                        <constraint firstItem="Fqq-Sn-Rmj" firstAttribute="leading" secondItem="dOp-Pu-huN" secondAttribute="leading" constant="16" id="TnV-Sa-gsD"/>
+                        <constraint firstItem="Fqq-Sn-Rmj" firstAttribute="top" secondItem="dOp-Pu-huN" secondAttribute="top" id="nWO-f6-myW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v9-pO-U6x">
+                    <rect key="frame" x="8" y="50" width="358" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="14"/>
+                    <color key="textColor" red="0.92549019607843142" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="fontResize" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dOp-Pu-huN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="61x-yv-AY8"/>
+                <constraint firstItem="3v9-pO-U6x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="OcS-LF-VMt"/>
+                <constraint firstItem="dOp-Pu-huN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pik-7m-13s"/>
+                <constraint firstAttribute="bottom" secondItem="3v9-pO-U6x" secondAttribute="bottom" id="XlK-ea-Ojd"/>
+                <constraint firstItem="dOp-Pu-huN" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.714286" id="gw9-07-xDa"/>
+                <constraint firstItem="3v9-pO-U6x" firstAttribute="top" secondItem="dOp-Pu-huN" secondAttribute="bottom" id="oeQ-Uk-0ul"/>
+                <constraint firstAttribute="trailing" secondItem="dOp-Pu-huN" secondAttribute="trailing" id="ofd-W7-QRC"/>
+                <constraint firstAttribute="trailing" secondItem="3v9-pO-U6x" secondAttribute="trailing" constant="8" id="vgj-Hy-56X"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+</document>

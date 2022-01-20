@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XWW-jb-pqN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nI2-9p-GV0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVY-z7-zWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="XWW-jb-pqN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gcn-eX-uxV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="phd-ed-wAp"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-2172" y="35"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="FollinicIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rdL-dO-0Mg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="D6t-KE-j4E">
+                                <rect key="frame" x="64" y="320" width="286" height="62.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pfR-wW-PGi"/>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.49803921569999998" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D6t-KE-j4E" firstAttribute="width" secondItem="rdL-dO-0Mg" secondAttribute="width" multiplier="0.690773" id="Y6v-X3-gPz"/>
+                            <constraint firstItem="D6t-KE-j4E" firstAttribute="centerY" secondItem="rdL-dO-0Mg" secondAttribute="centerY" multiplier="0.783806" id="rYc-dE-RbV"/>
+                            <constraint firstItem="D6t-KE-j4E" firstAttribute="centerX" secondItem="rdL-dO-0Mg" secondAttribute="centerX" multiplier="0.999952" id="x9f-K2-A5e"/>
+                            <constraint firstItem="D6t-KE-j4E" firstAttribute="height" secondItem="rdL-dO-0Mg" secondAttribute="height" multiplier="0.0695201" id="ycd-kC-gFa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I3t-sF-U6S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_splash_logo" width="286" height="63.5"/>
+    </resources>
+</document>
